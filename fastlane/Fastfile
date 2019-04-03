@@ -1,0 +1,90 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "Запуск тестов"
+  lane :tests do
+
+    run_tests(
+      scheme: "Watcher",
+      output_types: "html",
+      open_report: true
+    )
+
+    xcov(
+      workspace: "Watcher.xcworkspace",
+      scheme:  "Watcher",
+      output_directory: "xcov_output"
+    )
+
+    slather(
+      scheme:  "Watcher",
+      workspace: "Watcher.xcworkspace",
+      proj: "Watcher.xcodeproj",
+      html: true,
+      show: true,
+    )
+
+  end
+
+  desc "Сделать скриншоты"
+    lane :screenshot do
+      snapshot
+  end
+
+  desc "Сборка"
+  lane :building do
+    increment_build_number
+    build_ios_app(
+      workspace: "Watcher.xcworkspace",
+      configuration: "Debug",
+      scheme: "Watcher",
+      silent: true,
+      clean: true,
+      export_method: "development",
+      output_directory: "builds",
+      output_name: "Watcher.ipa"
+    )
+
+    slack(
+             message: "Watcher.ipa готов :white_check_mark:",
+             success: true,
+             slack_url: "https://hooks.slack.com/services/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",
+             default_payloads: [:git_branch, :last_git_commit_message, :git_author ]
+    )
+
+   end
+
+   error do |lane, exception|
+     slack(
+         message: "Ошибка",
+         success: false,
+         slack_url: "https://hooks.slack.com/services/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",
+         attachment_properties: {
+             fields: [
+                 {
+                     title: "Error message",
+                     value: exception.to_s,
+                     short: false
+                 }
+             ]
+         }
+     )
+   end
+
+end

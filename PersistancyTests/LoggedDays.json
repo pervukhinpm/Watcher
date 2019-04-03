@@ -1,0 +1,423 @@
+{
+    "data": {
+        "days": [
+            {
+                "logged_time_records": [],
+                "is_working": false,
+                "date": "2019-02-17"
+            },
+            {
+                "logged_time_records": [],
+                "is_working": true,
+                "date": "2019-02-18"
+            },
+            {
+                "logged_time_records": [
+                    {
+                        "id": 166,
+                        "comments": [],
+                        "created_at": "2019-02-19T18:56:46.374170+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 8,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Doom"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 5,
+                        "date": "2019-02-19",
+                        "updated_at": "2019-02-19T18:56:46.374201+00:00",
+                        "project_id": 8
+                    },
+                    {
+                        "id": 171,
+                        "comments": [],
+                        "created_at": "2019-02-19T20:14:52.786112+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 370,
+                        "date": "2019-02-19",
+                        "updated_at": "2019-02-19T20:14:52.786146+00:00",
+                        "project_id": 16
+                    }
+                ],
+                "is_working": true,
+                "date": "2019-02-19"
+            },
+            {
+                "logged_time_records": [
+                    {
+                        "id": 201,
+                        "comments": [],
+                        "created_at": "2019-02-19T21:47:24.887986+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 180,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T21:47:24.888019+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 202,
+                        "comments": [],
+                        "created_at": "2019-02-19T21:47:26.413467+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 180,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T21:47:26.413499+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 204,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:04:31.630401+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 300,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:04:31.630433+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 205,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:04:34.399652+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 300,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:04:34.399683+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 206,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:04:39.256217+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 240,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:04:39.256249+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 207,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:04:46.861250+00:00",
+                        "description": "String",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 480,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:04:46.861284+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 208,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:07:45.028657+00:00",
+                        "description": "B",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 425,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:07:45.028688+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 209,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:11:02.434474+00:00",
+                        "description": "Hgf",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 395,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:11:02.434509+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 210,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:12:41.093631+00:00",
+                        "description": "BFF",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 10,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:12:41.093667+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 212,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:14:04.460880+00:00",
+                        "description": "Hahaha",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 10,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:14:04.460911+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 213,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:15:18.852744+00:00",
+                        "description": "Gff",
+                        "project": {
+                            "id": 3,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Grand Theft Auto IV"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 280,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:15:18.852778+00:00",
+                        "project_id": 3
+                    },
+                    {
+                        "id": 214,
+                        "comments": [],
+                        "created_at": "2019-02-19T22:28:08.185498+00:00",
+                        "description": "Greg",
+                        "project": {
+                            "id": 3,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Grand Theft Auto IV"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 335,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T22:28:08.185558+00:00",
+                        "project_id": 3
+                    },
+                    {
+                        "id": 216,
+                        "comments": [],
+                        "created_at": "2019-02-19T23:36:07.226502+00:00",
+                        "description": "Hdhshzhsy",
+                        "project": {
+                            "id": 3,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Grand Theft Auto IV"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 275,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-19T23:36:07.226558+00:00",
+                        "project_id": 3
+                    },
+                    {
+                        "id": 217,
+                        "comments": [],
+                        "created_at": "2019-02-20T00:09:20.874421+00:00",
+                        "description": "Hgfg",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 65,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-20T00:09:20.874480+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 218,
+                        "comments": [],
+                        "created_at": "2019-02-20T00:49:51.981834+00:00",
+                        "description": "Jfjdhd",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 345,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-20T00:49:51.981866+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 219,
+                        "comments": [],
+                        "created_at": "2019-02-20T05:13:32.523082+00:00",
+                        "description": "Jdjd",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 480,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-20T05:13:32.523113+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 220,
+                        "comments": [],
+                        "created_at": "2019-02-20T05:15:11.308718+00:00",
+                        "description": "Hshssn",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 480,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-20T05:15:11.308751+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 221,
+                        "comments": [],
+                        "created_at": "2019-02-20T05:18:43.003745+00:00",
+                        "description": "Yehdgyeyd",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 480,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-20T05:18:43.003776+00:00",
+                        "project_id": 16
+                    },
+                    {
+                        "id": 224,
+                        "comments": [],
+                        "created_at": "2019-02-20T11:34:15.853074+00:00",
+                        "description": "Ndhshz",
+                        "project": {
+                            "id": 16,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Deus Ex: Human Revolution"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 60,
+                        "date": "2019-02-20",
+                        "updated_at": "2019-02-20T11:34:15.853107+00:00",
+                        "project_id": 16
+                    }
+                ],
+                "is_working": true,
+                "date": "2019-02-20"
+            },
+            {
+                "logged_time_records": [],
+                "is_working": true,
+                "date": "2019-02-21"
+            },
+            {
+                "logged_time_records": [
+                    {
+                        "id": 247,
+                        "comments": [],
+                        "created_at": "2019-02-21T21:39:51.960836+00:00",
+                        "description": "Chug",
+                        "project": {
+                            "id": 8,
+                            "is_commercial": true,
+                            "is_archived": false,
+                            "name": "Doom"
+                        },
+                        "status": "pending",
+                        "minutes_spent": 480,
+                        "date": "2019-02-22",
+                        "updated_at": "2019-02-21T21:39:51.960870+00:00",
+                        "project_id": 8
+                    }
+                ],
+                "is_working": true,
+                "date": "2019-02-22"
+            },
+            {
+                "logged_time_records": [],
+                "is_working": false,
+                "date": "2019-02-23"
+            },
+            {
+                "logged_time_records": [],
+                "is_working": false,
+                "date": "2019-02-24"
+            }
+        ]
+    }
+}

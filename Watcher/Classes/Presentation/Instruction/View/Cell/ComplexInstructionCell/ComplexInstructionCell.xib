@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComplexInstructionCellID" rowHeight="208" id="KGk-i7-Jjw" customClass="ComplexInstructionCell" customModule="Watcher" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="196.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Куда списывать" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNi-iH-8GA">
+                        <rect key="frame" x="16" y="73.5" width="288" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <color key="textColor" name="cloudyBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miW-q8-mIJ" customClass="T2Label" customModule="Watcher" customModuleProvider="target">
+                        <rect key="frame" x="16" y="98.5" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чем занят" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRs-JK-YVS">
+                        <rect key="frame" x="16" y="16" width="71" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <color key="textColor" name="cloudyBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-jR-kn6" customClass="T2Label" customModule="Watcher" customModuleProvider="target">
+                        <rect key="frame" x="16" y="41" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кто верифицирует" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibi-qj-6GI">
+                        <rect key="frame" x="16" y="131" width="288" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <color key="textColor" name="cloudyBlue"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8le-Pg-9d4" customClass="T2Label" customModule="Watcher" customModuleProvider="target">
+                        <rect key="frame" x="16" y="156" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzK-Oq-plb">
+                        <rect key="frame" x="16" y="195.5" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.83137254901960778" green="0.85098039215686272" blue="0.87450980392156863" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xk9-TW-Y3M"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zHx-jR-kn6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2cS-dx-cGy"/>
+                    <constraint firstItem="DRs-JK-YVS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="2hO-0k-Br1"/>
+                    <constraint firstItem="uzK-Oq-plb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4FM-vS-lQN"/>
+                    <constraint firstItem="8le-Pg-9d4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4NO-pk-JWR"/>
+                    <constraint firstAttribute="trailing" secondItem="zHx-jR-kn6" secondAttribute="trailing" constant="16" id="8sa-zC-9pt"/>
+                    <constraint firstAttribute="trailing" secondItem="miW-q8-mIJ" secondAttribute="trailing" constant="16" id="A20-s9-DTH"/>
+                    <constraint firstItem="ibi-qj-6GI" firstAttribute="top" secondItem="miW-q8-mIJ" secondAttribute="bottom" constant="12" id="Cwy-qk-NhO"/>
+                    <constraint firstItem="8le-Pg-9d4" firstAttribute="top" secondItem="ibi-qj-6GI" secondAttribute="bottom" constant="4" id="EyO-bt-IXb"/>
+                    <constraint firstItem="ibi-qj-6GI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="F0D-n8-vWw"/>
+                    <constraint firstItem="miW-q8-mIJ" firstAttribute="top" secondItem="tNi-iH-8GA" secondAttribute="bottom" constant="4" id="FWb-na-biU"/>
+                    <constraint firstAttribute="trailing" secondItem="tNi-iH-8GA" secondAttribute="trailing" constant="16" id="LrN-fD-ukf"/>
+                    <constraint firstItem="DRs-JK-YVS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="PZd-kF-6rF"/>
+                    <constraint firstAttribute="bottom" secondItem="uzK-Oq-plb" secondAttribute="bottom" id="VKu-UQ-UMz"/>
+                    <constraint firstItem="tNi-iH-8GA" firstAttribute="top" secondItem="zHx-jR-kn6" secondAttribute="bottom" constant="12" id="VcQ-pF-BBJ"/>
+                    <constraint firstAttribute="trailing" secondItem="8le-Pg-9d4" secondAttribute="trailing" constant="16" id="X44-7q-z24"/>
+                    <constraint firstAttribute="bottom" secondItem="8le-Pg-9d4" secondAttribute="bottom" constant="20" id="aBf-Oh-axD"/>
+                    <constraint firstItem="zHx-jR-kn6" firstAttribute="top" secondItem="DRs-JK-YVS" secondAttribute="bottom" constant="4" id="gps-BY-z4J"/>
+                    <constraint firstAttribute="trailing" secondItem="ibi-qj-6GI" secondAttribute="trailing" constant="16" id="hT7-65-Ds0"/>
+                    <constraint firstItem="miW-q8-mIJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="j9a-JA-h7R"/>
+                    <constraint firstItem="tNi-iH-8GA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="liG-x3-Lpt"/>
+                    <constraint firstAttribute="trailing" secondItem="uzK-Oq-plb" secondAttribute="trailing" id="xgk-zM-DCH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityTextLabel" destination="zHx-jR-kn6" id="EoB-ap-jBz"/>
+                <outlet property="timeLogTextLabel" destination="miW-q8-mIJ" id="8md-iy-lkY"/>
+                <outlet property="verifiesTextLabel" destination="8le-Pg-9d4" id="rrc-VL-Kul"/>
+            </connections>
+            <point key="canvasLocation" x="136.875" y="209.1549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="cloudyBlue">
+            <color red="0.72156862745098038" green="0.74509803921568629" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

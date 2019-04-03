@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PinCodeViewController" customModule="Watcher" customModuleProvider="target">
+            <connections>
+                <outlet property="biometricButton" destination="aoS-A4-rfK" id="8bj-dM-Y3O"/>
+                <outlet property="robotImageView" destination="Wy1-UU-uPO" id="sW5-9C-P9g"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="pinIndicators" destination="CVB-eC-MMp" collectionClass="NSMutableArray" id="rze-Ja-IoA"/>
+                <outletCollection property="pinIndicators" destination="fbt-du-Vb1" collectionClass="NSMutableArray" id="C13-wy-MvI"/>
+                <outletCollection property="pinIndicators" destination="MR5-hx-sm4" collectionClass="NSMutableArray" id="Oyf-Ci-UZH"/>
+                <outletCollection property="pinIndicators" destination="XPD-Ci-rKg" collectionClass="NSMutableArray" id="a0d-ow-SK2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-yC-j1C">
+                    <rect key="frame" x="50" y="221" width="275" height="385"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="63I-Jw-CHt">
+                            <rect key="frame" x="0.0" y="0.0" width="78.5" height="385"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fj-Z9-l4P" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="78.5" height="81.5"/>
+                                    <state key="normal" title="1"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="dnn-K0-Ysp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRN-tE-Nye" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="101.5" width="78.5" height="81"/>
+                                    <state key="normal" title="4"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="TMc-9t-MLM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="994-Oe-8sy" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="202.5" width="78.5" height="81.5"/>
+                                    <state key="normal" title="7"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="yvO-Yq-RDI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoS-A4-rfK">
+                                    <rect key="frame" x="0.0" y="304" width="78.5" height="81"/>
+                                    <state key="normal" image="touch"/>
+                                    <connections>
+                                        <action selector="biometricButtonAction:" destination="-1" eventType="touchUpInside" id="I8l-Pb-xYc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jpi-41-HUx">
+                            <rect key="frame" x="98.5" y="0.0" width="78" height="385"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkO-V6-ybG" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="78" height="81.5"/>
+                                    <state key="normal" title="2"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="r8R-fF-Td9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdF-I0-fzX" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="101.5" width="78" height="81"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="fivePinIdentifier"/>
+                                    <state key="normal" title="5"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="arx-yR-HM2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rga-CE-vPW" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="202.5" width="78" height="81.5"/>
+                                    <state key="normal" title="8"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="r9H-jL-Umw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvU-Ff-XpN" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="304" width="78" height="81"/>
+                                    <state key="normal" title="0"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="4Uh-fX-Z5v"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bTO-zr-0bP">
+                            <rect key="frame" x="196.5" y="0.0" width="78.5" height="385"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uly-6E-UHT" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="78.5" height="81.5"/>
+                                    <state key="normal" title="3"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="o2V-PT-m5A"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4m-I5-7J9" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="101.5" width="78.5" height="81"/>
+                                    <state key="normal" title="6"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="pIF-gx-aIO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCI-yy-Li0" customClass="KeyboardButton" customModule="Watcher" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="202.5" width="78.5" height="81.5"/>
+                                    <state key="normal" title="9"/>
+                                    <connections>
+                                        <action selector="keyboardButtonAction:" destination="-1" eventType="touchUpInside" id="Nhx-CO-ld4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-zh-clY">
+                                    <rect key="frame" x="0.0" y="304" width="78.5" height="81"/>
+                                    <state key="normal" image="delete"/>
+                                    <connections>
+                                        <action selector="deleteButtonAction:" destination="-1" eventType="touchUpInside" id="Kxn-yK-X4d"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="i6L-yC-j1C" secondAttribute="height" multiplier="1:1.4" id="nAs-r0-Qgy"/>
+                    </constraints>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="Wy1-UU-uPO">
+                    <rect key="frame" x="152.5" y="35" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="YSK-eG-Fjq"/>
+                        <constraint firstAttribute="height" constant="70" id="zuO-Tj-s6i"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYW-PD-vg4" customClass="T1Label" customModule="Watcher" customModuleProvider="target">
+                    <rect key="frame" x="139" y="113" width="97" height="23"/>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="bZj-0b-Ulu">
+                    <rect key="frame" x="114" y="156" width="147" height="15"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVB-eC-MMp" customClass="PinIndicator" customModule="Watcher" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="Lva-tu-3Au"/>
+                                <constraint firstAttribute="width" constant="15" id="djh-9J-CKu"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-du-Vb1" customClass="PinIndicator" customModule="Watcher" customModuleProvider="target">
+                            <rect key="frame" x="44" y="0.0" width="15" height="15"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MR5-hx-sm4" customClass="PinIndicator" customModule="Watcher" customModuleProvider="target">
+                            <rect key="frame" x="88" y="0.0" width="15" height="15"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPD-Ci-rKg" customClass="PinIndicator" customModule="Watcher" customModuleProvider="target">
+                            <rect key="frame" x="132" y="0.0" width="15" height="15"/>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cH-ry-jn8" customClass="ClearButton" customModule="Watcher" customModuleProvider="target">
+                    <rect key="frame" x="110.5" y="616" width="154" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1UX-SF-gHU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="18"/>
+                    <state key="normal" title="Сброс регистрации"/>
+                    <connections>
+                        <action selector="resetRegistrationButtonAction:" destination="-1" eventType="touchUpInside" id="54S-Ty-Xd4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6cH-ry-jn8" secondAttribute="bottom" constant="16" id="5Ip-Vz-VfC"/>
+                <constraint firstItem="i6L-yC-j1C" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bZj-0b-Ulu" secondAttribute="bottom" constant="10" id="7Ve-Bz-lOi"/>
+                <constraint firstItem="bZj-0b-Ulu" firstAttribute="top" secondItem="fYW-PD-vg4" secondAttribute="bottom" constant="20" id="Gfp-IH-iAq"/>
+                <constraint firstItem="6cH-ry-jn8" firstAttribute="top" secondItem="i6L-yC-j1C" secondAttribute="bottom" constant="10" id="OYj-b1-vTb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i6L-yC-j1C" secondAttribute="trailing" constant="50" id="S1E-2c-ke9"/>
+                <constraint firstItem="fYW-PD-vg4" firstAttribute="top" secondItem="Wy1-UU-uPO" secondAttribute="bottom" constant="8" id="T3Z-03-K1V"/>
+                <constraint firstItem="Wy1-UU-uPO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="YFs-L3-IOg"/>
+                <constraint firstItem="bZj-0b-Ulu" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ayS-Yb-bPn"/>
+                <constraint firstItem="fYW-PD-vg4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fmj-aO-6C7"/>
+                <constraint firstItem="i6L-yC-j1C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="tVa-4G-YXz"/>
+                <constraint firstItem="Wy1-UU-uPO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wAB-eH-KWR"/>
+                <constraint firstItem="6cH-ry-jn8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wsi-xp-OfP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete" width="52" height="38"/>
+        <image name="robot" width="125" height="125"/>
+        <image name="touch" width="43" height="44"/>
+    </resources>
+</document>

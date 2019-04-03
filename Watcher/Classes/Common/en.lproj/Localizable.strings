@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Wathcer
+
+  Created by Петр Первухин on 13/02/2019.
+  Copyright © 2019 pperv. All rights reserved.
+*/
+
+close = "Close";
+error = "Error";
+time_manage = "Time manage";
+login_error = "Invalid email";
+email_placeholder = "Email for outstuff";
+password_placeholder = "Password";
+enter = "Enter";
+enter_for_robots = "  Enter for robots";
+registration = "Registration";
+forgot_password = "Forgot password?";
+enter_project_name = "Enter project name";
+hour = "h";
+add_description = "Add description";
+fill_button = "Fill";
+
+authentication_required_error = "Authentication required";
+validation_error = "Validation error";
+login_error = "Invalid login or password";
+
+verifying_error = "There was a problem verifying your identity.";
+pressed_cancel_error = "You pressed cancel.";
+pressed_password_error = "You pressed password.";
+biometric_not_available_error = "Face ID/Touch ID is not available.";
+biometric_not_set_up_error = "Face ID/Touch ID is not set up.";
+biometric_locked_error = "Face ID/Touch ID is locked.";
+biometric_cant_configured_error = "Face ID/Touch ID may not be configured";
+login_reason = "Enter in app";

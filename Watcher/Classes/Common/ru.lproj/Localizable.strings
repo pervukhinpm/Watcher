@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Wathcer
+
+  Created by Петр Первухин on 13/02/2019.
+  Copyright © 2019 pperv. All rights reserved.
+*/
+
+close = "Закрыть";
+error = "Ошибка";
+time_manage = "Учет времени";
+login_error = "Неверный формат логина";
+email_placeholder = "Email для аутстаферов";
+password_placeholder = "Пароль";
+enter = "Войти";
+enter_for_robots = "  Вход для роботов";
+registration = "Регистрация";
+forgot_password = "Забыли пароль?";
+enter_project_name = "Введите название проекта";
+hour = "ч";
+add_description = "Добавить описание";
+fill_button = "Заполнить";
+
+authentication_required_error = "Требуется аутентификация";
+validation_error = "Ошибка валидации";
+login_error = "Неправильный email или пароль";
+
+verifying_error = "Возникла ошибка с идентицифированием вашей личности";
+pressed_cancel_error = "Вы нажали отмена";
+pressed_password_error = "Вы выбрали ввод пароля";
+biometric_not_available_error = "Face ID/Touch ID не доступно";
+biometric_not_set_up_error = "Face ID/Touch ID не настроено";
+biometric_locked_error = "Face ID/Touch ID заблокировано";
+biometric_cant_configured_error = "Face ID/Touch ID не может быть сконфигурировано";
+login_reason = "Вход в приложение";

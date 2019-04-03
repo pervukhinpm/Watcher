@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProjectTimeCellID" id="KGk-i7-Jjw" customClass="ProjectTimeCell" customModule="Watcher" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKE-x2-fgV">
+                        <rect key="frame" x="0.0" y="4" width="320" height="63.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watcher'19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="854-Dk-2lx" customClass="T2Label" customModule="Watcher" customModuleProvider="target">
+                                <rect key="frame" x="16" y="10" width="239" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 ч" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jv-cS-bNf" customClass="T2Label" customModule="Watcher" customModuleProvider="target">
+                                <rect key="frame" x="276.5" y="10" width="27.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учет времени" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x9-3q-5XM" customClass="C1LightLabel" customModule="Watcher" customModuleProvider="target">
+                                <rect key="frame" x="16" y="33.5" width="239" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3x9-3q-5XM" firstAttribute="leading" secondItem="sKE-x2-fgV" secondAttribute="leading" constant="16" id="5WD-f2-Rfi"/>
+                            <constraint firstItem="854-Dk-2lx" firstAttribute="leading" secondItem="sKE-x2-fgV" secondAttribute="leading" constant="16" id="EYu-Lu-49i"/>
+                            <constraint firstItem="7Jv-cS-bNf" firstAttribute="top" secondItem="sKE-x2-fgV" secondAttribute="top" constant="10" id="ahi-Zz-oZC"/>
+                            <constraint firstAttribute="trailing" secondItem="854-Dk-2lx" secondAttribute="trailing" constant="65" id="bjO-gA-Ub5"/>
+                            <constraint firstItem="854-Dk-2lx" firstAttribute="top" secondItem="sKE-x2-fgV" secondAttribute="top" constant="10" id="i0p-hi-q6t"/>
+                            <constraint firstItem="3x9-3q-5XM" firstAttribute="top" secondItem="854-Dk-2lx" secondAttribute="bottom" constant="3" id="nxe-n1-cO1"/>
+                            <constraint firstAttribute="trailing" secondItem="3x9-3q-5XM" secondAttribute="trailing" constant="65" id="puJ-2p-IYb"/>
+                            <constraint firstAttribute="trailing" secondItem="7Jv-cS-bNf" secondAttribute="trailing" constant="16" id="zCL-Ww-RmW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sKE-x2-fgV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="4FJ-k0-qhN"/>
+                    <constraint firstItem="sKE-x2-fgV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="90q-b7-Ewi"/>
+                    <constraint firstAttribute="trailing" secondItem="sKE-x2-fgV" secondAttribute="trailing" id="PBz-M9-imW"/>
+                    <constraint firstAttribute="bottom" secondItem="sKE-x2-fgV" secondAttribute="bottom" constant="4" id="uct-Ca-1ne"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="sKE-x2-fgV" id="B5e-XE-V27"/>
+                <outlet property="loggedTimeLabel" destination="7Jv-cS-bNf" id="4zo-pk-zeS"/>
+                <outlet property="projectDescriptionLabel" destination="3x9-3q-5XM" id="3JP-kD-0KM"/>
+                <outlet property="projectNameLabel" destination="854-Dk-2lx" id="UUW-en-0O3"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="144.82758620689657"/>
+        </tableViewCell>
+    </objects>
+</document>

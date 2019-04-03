@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DataBaseViewController" customModule="Watcher" customModuleProvider="target">
+            <connections>
+                <outlet property="dataBaseSegmentedControl" destination="PkX-zg-eKN" id="5bK-Lt-GWY"/>
+                <outlet property="modelsSegmentedControl" destination="eiM-IA-ayq" id="zXj-K2-O4Q"/>
+                <outlet property="tableView" destination="o7N-aw-aZ0" id="TW9-GK-c1C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVv-ih-6ZA">
+                    <rect key="frame" x="16" y="36" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Efu-EK-byT"/>
+                        <constraint firstAttribute="height" constant="24" id="S8e-P4-Ubk"/>
+                    </constraints>
+                    <state key="normal" image="icnClose"/>
+                    <connections>
+                        <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="Agt-ry-thn"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o7N-aw-aZ0">
+                    <rect key="frame" x="0.0" y="181" width="375" height="486"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Q7-Ny-FlL">
+                    <rect key="frame" x="16" y="68" width="343" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PkX-zg-eKN">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="51"/>
+                            <segments>
+                                <segment title="SQLite.Swift"/>
+                                <segment title="Realm"/>
+                                <segment title="GRDB"/>
+                            </segments>
+                            <color key="tintColor" name="orangeyRed"/>
+                            <connections>
+                                <action selector="segmentedControlValueDidChanged:" destination="-1" eventType="valueChanged" id="wtB-4Y-Lg8"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Qyz-Kl-wS4"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lJ7-BA-BeD">
+                    <rect key="frame" x="16" y="126" width="343" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-IA-ayq">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="51"/>
+                            <segments>
+                                <segment title="LoggedDay"/>
+                                <segment title="TimeRecord"/>
+                                <segment title="Project"/>
+                            </segments>
+                            <color key="tintColor" name="orangeyRed"/>
+                            <connections>
+                                <action selector="modelsSegmentedControlValueDidChanged:" destination="-1" eventType="valueChanged" id="8R2-zV-aQw"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="xxq-Sl-tEd"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="o7N-aw-aZ0" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0hd-AR-im6"/>
+                <constraint firstItem="8Q7-Ny-FlL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2mY-ln-VSS"/>
+                <constraint firstItem="o7N-aw-aZ0" firstAttribute="top" secondItem="lJ7-BA-BeD" secondAttribute="bottom" constant="5" id="5ap-Fe-04y"/>
+                <constraint firstItem="8Q7-Ny-FlL" firstAttribute="top" secondItem="LVv-ih-6ZA" secondAttribute="bottom" constant="8" id="5xI-Mw-PVh"/>
+                <constraint firstItem="lJ7-BA-BeD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6TN-PD-MUd"/>
+                <constraint firstItem="o7N-aw-aZ0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="D7U-J7-bub"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Q7-Ny-FlL" secondAttribute="trailing" constant="16" id="NXz-04-suG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lJ7-BA-BeD" secondAttribute="trailing" constant="16" id="SRh-cg-Srz"/>
+                <constraint firstItem="lJ7-BA-BeD" firstAttribute="top" secondItem="8Q7-Ny-FlL" secondAttribute="bottom" constant="8" id="hVg-nC-BIe"/>
+                <constraint firstItem="LVv-ih-6ZA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="p4L-mT-wsI"/>
+                <constraint firstItem="o7N-aw-aZ0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tS3-vC-oIb"/>
+                <constraint firstItem="LVv-ih-6ZA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="y0o-Le-BmF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="142.57871064467767"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icnClose" width="24" height="24"/>
+        <namedColor name="orangeyRed">
+            <color red="1" green="0.26666666666666666" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

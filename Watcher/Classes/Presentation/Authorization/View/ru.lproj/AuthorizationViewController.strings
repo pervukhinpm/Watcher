@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Неверный формат логина"; ObjectID = "O3d-1U-O7R"; */
+"O3d-1U-O7R.text" = "Неверный формат логина";
+
+/* Class = "UIButton"; normalTitle = "Войти"; ObjectID = "PzY-f5-tCM"; */
+"PzY-f5-tCM.normalTitle" = "Войти";
+
+/* Class = "UIButton"; normalTitle = "  Вход для роботов"; ObjectID = "RfQ-R0-96m"; */
+"RfQ-R0-96m.normalTitle" = "  Вход для роботов";
+
+/* Class = "UIButton"; normalTitle = "Регистрация"; ObjectID = "Yde-4o-B2h"; */
+"Yde-4o-B2h.normalTitle" = "Регистрация";
+
+/* Class = "UITextField"; placeholder = "Пароль"; ObjectID = "Zh2-dP-pCu"; */
+"Zh2-dP-pCu.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Email для аутстаферов"; ObjectID = "oeb-ts-cxb"; */
+"oeb-ts-cxb.placeholder" = "Email для аутстаферов";
+
+/* Class = "UIButton"; normalTitle = "Забыли пароль?"; ObjectID = "wI9-R7-dHd"; */
+"wI9-R7-dHd.normalTitle" = "Забыли пароль?";

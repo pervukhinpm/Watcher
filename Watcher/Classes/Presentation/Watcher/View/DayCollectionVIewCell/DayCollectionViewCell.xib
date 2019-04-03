@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DayCollectionViewCellID" id="gTV-IL-0wX" customClass="DayCollectionViewCell" customModule="Watcher" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="467"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="467"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nQQ-Rn-wVq">
+                        <rect key="frame" x="0.0" y="110" width="414" height="357"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xe-Dh-Qfx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8l-yf-vgT">
+                                <rect key="frame" x="0.0" y="58" width="414" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.2666666667" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7Ri-jq-wMj"/>
+                                </constraints>
+                                <state key="normal" image="icnPlus"/>
+                                <connections>
+                                    <action selector="addProjectButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GDs-8z-rHj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06.02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZ2-kT-6GA" customClass="C1Label" customModule="Watcher" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="4" width="31.5" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Среда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keI-RF-zgu" customClass="B2Label" customModule="Watcher" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24" width="51" height="23"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ч" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY0-YX-G1N" customClass="B2Label" customModule="Watcher" customModuleProvider="target">
+                                <rect key="frame" x="384.5" y="24" width="23.5" height="23"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CY0-YX-G1N" secondAttribute="trailing" constant="6" id="4kh-YA-ovd"/>
+                            <constraint firstAttribute="height" constant="110" id="5Ug-Xh-968"/>
+                            <constraint firstItem="K8l-yf-vgT" firstAttribute="top" secondItem="keI-RF-zgu" secondAttribute="bottom" constant="11" id="Mkq-nZ-4oa"/>
+                            <constraint firstItem="keI-RF-zgu" firstAttribute="top" secondItem="EZ2-kT-6GA" secondAttribute="bottom" constant="2" id="OPQ-7M-VbT"/>
+                            <constraint firstItem="CY0-YX-G1N" firstAttribute="centerY" secondItem="keI-RF-zgu" secondAttribute="centerY" id="PoC-jI-vcV"/>
+                            <constraint firstAttribute="bottom" secondItem="K8l-yf-vgT" secondAttribute="bottom" constant="4" id="dNm-6p-p6z"/>
+                            <constraint firstItem="EZ2-kT-6GA" firstAttribute="leading" secondItem="2Xe-Dh-Qfx" secondAttribute="leading" id="fdO-v6-YKJ"/>
+                            <constraint firstItem="K8l-yf-vgT" firstAttribute="leading" secondItem="2Xe-Dh-Qfx" secondAttribute="leading" id="t27-KR-lmZ"/>
+                            <constraint firstAttribute="trailing" secondItem="K8l-yf-vgT" secondAttribute="trailing" id="wib-0A-CUW"/>
+                            <constraint firstItem="keI-RF-zgu" firstAttribute="leading" secondItem="2Xe-Dh-Qfx" secondAttribute="leading" id="yc3-cI-oNX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="nQQ-Rn-wVq" firstAttribute="top" secondItem="2Xe-Dh-Qfx" secondAttribute="bottom" id="8CA-E0-RtP"/>
+                <constraint firstAttribute="bottom" secondItem="nQQ-Rn-wVq" secondAttribute="bottom" id="C09-Dd-CE2"/>
+                <constraint firstItem="nQQ-Rn-wVq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Y0C-40-Bhf"/>
+                <constraint firstAttribute="trailing" secondItem="nQQ-Rn-wVq" secondAttribute="trailing" id="eEj-lq-VeZ"/>
+                <constraint firstAttribute="trailing" secondItem="2Xe-Dh-Qfx" secondAttribute="trailing" id="hCp-OO-mma"/>
+                <constraint firstItem="2Xe-Dh-Qfx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rdE-xF-y1l"/>
+                <constraint firstItem="2Xe-Dh-Qfx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="up3-n5-cIH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="414" height="467"/>
+            <connections>
+                <outlet property="addProjectButton" destination="K8l-yf-vgT" id="Xfj-ix-OqH"/>
+                <outlet property="containerView" destination="2Xe-Dh-Qfx" id="Hxs-6v-k3v"/>
+                <outlet property="dateLabel" destination="EZ2-kT-6GA" id="O3h-8r-TFU"/>
+                <outlet property="dayLabel" destination="keI-RF-zgu" id="Slg-S3-YxM"/>
+                <outlet property="hoursLabel" destination="CY0-YX-G1N" id="hMu-MQ-aSu"/>
+                <outlet property="tableView" destination="nQQ-Rn-wVq" id="oM3-Ol-cO2"/>
+            </connections>
+            <point key="canvasLocation" x="428.80000000000001" y="341.37931034482762"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icnPlus" width="24" height="24"/>
+    </resources>
+</document>
